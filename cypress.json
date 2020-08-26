@@ -1,0 +1,4 @@
+{
+    "baseUrl": "https://signincegidintegration.b2clogin.com/0daf9160-dc03-4adb-8da9-eeffda00ba46/oauth2/v2.0/authorize?protocol=oauth2&response_type=id_token&client_id=6502769b-948e-4860-b164-b5a49527beaa&redirect_uri=https%3A%2F%2Fqa.popz.almks.meta4.com%2F&scope=openid%20profile%20email&state=hrALKn3EMCRsO34a9mExV&p=B2C_1A_RP_POPZ&nonce=55ix8h8s6DofIPI1z3KTx",
+    "chromeWebSecurity": false
+}
