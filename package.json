@@ -5,13 +5,19 @@
   "main": "index.js",
   "dependencies": {
     "cypress": "^5.0.0",
+    "npm-run-all": "^4.1.5",
+    "run-p": "0.0.0",
     "typescript": "^4.0.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cross-env": "^7.0.2"
+  },
   "scripts": {
-    "tests": ".\\node_modules\\.bin\\cypress run",
     "test:login": ".\\node_modules\\.bin\\cypress run --spec 'cypress/integration/login/*'",
-    "test:login:chrome": ".\\node_modules\\.bin\\cypress run --spec 'cypress/integration/login/*' --headless --browser chrome"
+    "test:login:chrome": ".\\node_modules\\.bin\\cypress run --spec 'cypress/integration/login/*' --headless --browser chrome",
+    "cypress:open": ".\\node_modules\\.bin\\cypress open",
+    "cypress:run": ".\\node_modules\\.bin\\cypress run",
+    "dev": "cross-env BROWSER=none CYPRESS_REMOTE_DEBUGGING_PORT=9222 node_modules\\.bin\\run-p cypress:open"
   },
   "author": "Yhasmina",
   "license": "ISC"
